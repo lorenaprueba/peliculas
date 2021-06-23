@@ -8,7 +8,8 @@ import { MovieService } from 'src/app/services/MovieService';
 })
 export class MovieComponent implements OnInit {
 
-  constructor(private movieService : MovieService) { 
+  findMovie : any;
+  constructor(private movieService : MovieService) {
   }
 
   ngOnInit(): void {
@@ -16,8 +17,8 @@ export class MovieComponent implements OnInit {
   }
 
   uploadService(){
-    this.movieService.searchMovie('tt3896198').subscribe(p => console.log(p))
-    //console.log();
+      this.movieService.searchMovie('tt3896198').subscribe(p => this.findMovie = p)
+
   }
 
 }
