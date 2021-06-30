@@ -1,0 +1,49 @@
+<div class="modal" id='modalMovie' tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalle Pelicula</h5>
+                <button type="button" id='btnCerrar' class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <div *ngIf='movie'>
+                    <div class='movie'>
+                        <img [src]="movie.Poster" class="img-fluid" alt="Poster">
+                        <label id='MovieTitle'>{{movie.Title}}</label>
+                        <div class="col-md-6">
+                            <label id='MovieYear'>Year: {{movie.Year}}</label>
+                            <label id='MovieType'>Type: {{movie.Type}}</label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label id='MovieRated'>Rated: {{movie.Rated}}</label>
+                            <label id='MovieReleased'>Released: {{movie.Released}}</label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label id='MovieRuntime'>Runtime: {{movie.Runtime}}</label>
+                            <label id='MovieGenre'>Genre: {{movie.Genre}}</label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label id='MovieDirector'>Director: {{movie.Director}}</label>
+                            <label id='MovieWriter'>Writer: {{movie.Writer}}</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label id='MovieActors'>Actors: {{movie.Actors}}</label>
+                            <label id='MoviePlot'>Plot: {{movie.Plot}}</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label id='MovieLanguage'>Language: {{movie.Language}}</label>
+                            <label id='MovieProduction'>Production: {{movie.Production}}</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+            </div> -->
+        </div>
+    </div>
+</div>

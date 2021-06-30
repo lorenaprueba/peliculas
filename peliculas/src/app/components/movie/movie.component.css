@@ -1,0 +1,21 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.content>.title>label {
+    margin-bottom: 10%;
+    font-size: 3em;
+}
+
+.buscador {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}

@@ -1,0 +1,35 @@
+.movie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 10%;
+    align-items: center;
+}
+
+#MovieTitle {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.movie>label {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#MovieYear,
+#MovieType,
+#MovieRated,
+#MovieReleased,
+#MovieRuntime,
+#MovieGenre,
+#MovieDirector,
+#MovieWriter,
+#MovieActors,
+#MoviePlot,
+#MovieLanguage,
+#MovieProduction {
+    font-size: 1em;
+    text-align: center;
+}

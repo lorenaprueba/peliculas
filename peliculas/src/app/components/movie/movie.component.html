@@ -1,1 +1,14 @@
-<p>movie works!</p>
+<div class='content'>
+    <div class='title'>
+        <label>The Movie Project</label>
+    </div>
+    <div class='buscador'>
+        <div class="input-group mb-3">
+            <input [(ngModel)]='pelicula' type="text" id="texto" name="texto" class="form-control" placeholder="Ingrese el nombre de la pelicula" aria-label="Ingrese el nombre de la pelicula" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="btnBuscar" (click)='buscar()'>Buscar</button>
+        </div>
+    </div>
+    <div class='tablaPeliculas' *ngIf='list.length'>
+        <app-lista-movie [list]='list'></app-lista-movie>
+    </div>
+</div>
